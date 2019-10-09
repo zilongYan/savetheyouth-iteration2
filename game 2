@@ -1,0 +1,608 @@
+<html>
+    <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+        <div id="video_container" class="container">
+        <div id="audio_container">
+            <audio id="audio1" autoplay="autoplay">
+                <source src="http://savetheyouth-iteration1.tk/wp-content/uploads/2019/09/After_School_Jamboree.mp3" type="audio/mpeg" />
+            </audio>
+        </div>
+        <video id="ReadyToPlay" autoplay loop>
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/ReadyToPlay.mp4" type=video/mp4 >
+        </video>
+        <video id="Loading"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/Loading.mp4" type=video/mp4>
+        </video>
+            <video id="Instruction" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/Instruction.mp4" type=video/mp4>
+        </video>
+            <video id="q1" style="display: none" >
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/q1.mp4" type=video/mp4>
+        </video>
+            <video id="q2" style="display: none" >
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/q2.mp4" type=video/mp4>
+        </video>
+            <video id="q3" style="display: none" >
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/q3.mp4" type=video/mp4>
+        </video>
+            <video id="q4" style="display: none" >
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/q4.mp4" type=video/mp4>
+        </video>
+            <video id="q5" style="display: none" >
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/q5.mp4" type=video/mp4>
+        </video>
+            <video id="c1" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/c1.mp4" type=video/mp4>
+        </video>
+            <video id="c2" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/c2.mp4" type=video/mp4>
+        </video>
+            <video id="c3" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/c3.mp4" type=video/mp4>
+        </video>
+            <video id="c4" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/c4.mp4" type=video/mp4>
+        </video>
+            <video id="c5" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/c5.mp4" type=video/mp4>
+        </video>
+            
+            <video id="wrong" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/wrong.mp4" type=video/mp4>
+        </video>
+            
+            <video id="e1" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/e1.mp4" type=video/mp4>
+        </video>
+            
+            <video id="e2" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/e2.mp4" type=video/mp4>
+        </video>
+            
+            <video id="e3" style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/e3.mp4" type=video/mp4>
+        </video>
+            
+        </div>
+        
+        <div id="playButton">
+          <button id="play"></button>
+        </div> 
+        <div id="goButton">
+          <button id="go"></button>
+        </div>
+        
+        <div id="q1Button">
+          <button id="q1yes"></button>
+          <button id="q1no"></button>
+        </div>
+        
+        <div id="q2Button">
+          <button id="q2yes"></button>
+          <button id="q2no"></button>
+        </div>
+        
+        <div id="q3Button">
+          <button id="q3yes"></button>
+          <button id="q3no"></button>
+        </div>
+        
+        <div id="q4Button">
+          <button id="q4yes"></button>
+          <button id="q4no"></button>
+        </div>
+        
+        <div id="q5Button">
+          <button id="q5yes"></button>
+          <button id="q5no"></button>
+        </div>
+        <div>
+            <button id="musicControl"> <span><i class='fas fa-volume-up' id='musicIcon'></i></span></button>
+        </div>
+        <div>
+            <button id="backHome" onclick="window.location.href='http://savetheyouth-iteration2.tk/games'"> <span><i class='fas fa-arrow-left'></i></span></button>
+        </div>
+    </body>
+    <style>
+        #video_container{
+        position: relative;
+        display: table;
+        width: auto;
+    }
+        #play{
+            position: absolute;
+            right:3%;
+            bottom: 5%;
+            width:300px;
+            height: 130px;
+            background-color: transparent;
+            border: none;
+        
+        }
+        #go{
+            position: absolute;
+            right:14%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            background-color: transparent;
+            border: none;
+        
+        }
+        #q1yes{
+            position: absolute;
+            right:25%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+            
+        }
+        #q1no{
+            position: absolute;
+            right:14%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+        }
+        #q2yes{
+            position: absolute;
+            right:25%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+            
+        }
+        #q2no{
+            position: absolute;
+            right:14%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+        }
+        #q3yes{
+            position: absolute;
+            right:25%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+            
+        }
+        #q3no{
+            position: absolute;
+            right:14%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+        }
+        #q4yes{
+            position: absolute;
+            right:25%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+            
+        }
+        #q4no{
+            position: absolute;
+            right:14%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+        }
+        #q5yes{
+            position: absolute;
+            right:25%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+            
+        }
+        #q5no{
+            position: absolute;
+            right:14%;
+            bottom: 1%;
+            width:110px;
+            height: 110px;
+            display: none;
+            border: none;
+            background-color: transparent;
+        }
+        #musicControl{
+            position: absolute;
+            top:2%;
+            right:2%;
+            width:5px;
+            height:5px;
+            border: none;
+            background-color: transparent;
+            font-size: 30px;
+        }
+        #backHome{
+            position: absolute;
+            top:2%;
+            left:1%;
+            width:5px;
+            height:5px;
+            border: none;
+            background-color: transparent;
+            font-size: 30px;
+            
+        }
+    </style>
+    <script type="text/javascript">
+        audio1.volume=0.4;
+         var audio = document.getElementById('audio1');
+         var audioPlay = true;
+         var musicControl = document.getElementById('musicControl');
+         var playGame = document.getElementById('play');
+         var ReadyToPlay = document.getElementById('ReadyToPlay');
+         var Loading = document.getElementById('Loading');
+         var icon = document.getElementById('musicIcon');
+         var q1 = document.getElementById('q1');
+         var q2 = document.getElementById('q2');
+         var q3 = document.getElementById('q3');
+         var q4 = document.getElementById('q4');
+         var q5 = document.getElementById('q5');
+         var c1 = document.getElementById('c1');
+         var c2 = document.getElementById('c2');
+         var c3 = document.getElementById('c3');
+         var c4 = document.getElementById('c4');
+         var c5 = document.getElementById('c5');
+         var e1 = document.getElementById('e1');   
+         var e2 = document.getElementById('e2');
+         var e3 = document.getElementById('e3');
+         var wrong = document.getElementById('wrong');
+         var go = document.getElementById('go');
+         var q1yes = document.getElementById('q1yes');
+         var q1no = document.getElementById('q1no');
+        
+         var q2yes = document.getElementById('q2yes');
+         var q2no = document.getElementById('q2no');
+        
+         var q3yes = document.getElementById('q3yes');
+         var q3no = document.getElementById('q3no');
+        
+         var q4yes = document.getElementById('q4yes');
+         var q4no = document.getElementById('q4no');
+        
+         var q5yes = document.getElementById('q5yes');
+         var q5no = document.getElementById('q5no');
+        
+         var Instruction = document.getElementById('Instruction');
+        
+         var score = 0;
+         var videoNumber = 1;
+        
+    
+        musicControl.addEventListener("click",function(event){
+            if(!audioPlay){
+                audio.play();
+                audioPlay = true;
+                 icon.setAttribute('class','fas fa-volume-up');
+            }
+            else{
+                audio.pause();
+                audioPlay = false;
+                icon.setAttribute('class','fas fa-volume-mute');
+            }
+            
+        },false)
+        
+        
+        
+        
+        playGame.addEventListener("click", function(event) {
+        ReadyToPlay.style.display = 'none' ;
+        Loading.style.display = 'block' ;
+            Loading.play();
+            playGame.style.display= 'none'
+}, false);
+        Loading.onended = function(){
+            Loading.style.display='none';
+            Instruction.style.display='block';
+            Instruction.play();
+            go.style.display = 'block';
+        }
+        Instruction.onended = function(){
+            go.style.display = 'block';
+        }
+         go.addEventListener("click", function(event) {
+            Instruction.pause();
+            go.style.display = 'none' ;
+            Instruction.style.display = 'none' ;
+            videoControl(videoNumber);
+}, false);
+        
+        
+        q1yes.addEventListener("click", function(event) {
+          q1yes.style.display='none';
+          q1no.style.display='none';
+          q1.style.display='none';
+          score = score + 1;
+            scoreControl(score);
+}, false);
+        
+        q1no.addEventListener("click", function(event) {
+          q1yes.style.display='none';
+          q1no.style.display='none';
+          q1.style.display='none';
+            wrongControl();
+}, false);
+        
+        q2yes.addEventListener("click", function(event) {
+          q2yes.style.display='none';
+          q2no.style.display='none';
+          q2.style.display='none';
+          score = score + 1;
+            scoreControl(score);
+}, false);
+        q2no.addEventListener("click", function(event) {
+          q2yes.style.display='none';
+          q2no.style.display='none';
+          q2.style.display='none';
+            wrongControl();
+}, false);
+        
+        q3yes.addEventListener("click", function(event) {
+          q3yes.style.display='none';
+          q3no.style.display='none';
+          q3.style.display='none';
+            wrongControl();
+          
+}, false);
+        q3no.addEventListener("click", function(event) {
+          q3yes.style.display='none';
+          q3no.style.display='none';
+          q3.style.display='none';
+            score = score + 1;
+            scoreControl(score);
+}, false);
+        
+        q4yes.addEventListener("click", function(event) {
+          q4yes.style.display='none';
+          q4no.style.display='none';
+          q4.style.display='none';
+            wrongControl();
+          
+}, false);
+        q4no.addEventListener("click", function(event) {
+          q4yes.style.display='none';
+          q4no.style.display='none';
+          q4.style.display='none';
+            score = score + 1;
+            scoreControl(score);
+}, false);
+        
+        q5yes.addEventListener("click", function(event) {
+          q5yes.style.display='none';
+          q5no.style.display='none';
+          q5.style.display='none';
+            wrongControl();
+          
+}, false);
+        q5no.addEventListener("click", function(event) {
+          q5yes.style.display='none';
+          q5no.style.display='none';
+          q5.style.display='none';
+            score = score + 1;
+            scoreControl(score);
+}, false);
+        
+//        q1.onended = function(){
+//            q1.style.display='none';
+//            videoControl(videoNumber)
+//        };
+//        q2.onended = function(){
+//            q2.style.display='none';
+//            videoControl(videoNumber)
+//        };
+//        q3.onended = function(){
+//            q3.style.display='none';
+//            videoControl(videoNumber)
+//        };
+//        q4.onended = function(){
+//            q4.style.display='none';
+//            videoControl(videoNumber)
+//        };
+//        q5.onended = function(){
+//            q5.style.display='none';
+//            videoControl(videoNumber)
+//        };
+//        
+        c1.onended = function(){
+            videoNumber = videoNumber +1;
+            c1.style.display='none';
+            if(videoNumber == 6){
+                endControl(score);
+            }else{
+                videoControl(videoNumber);
+            }
+        };
+        c2.onended = function(){
+            videoNumber = videoNumber +1;
+            c2.style.display='none';
+            if(videoNumber == 6){
+                endControl(score);
+            }else{
+                videoControl(videoNumber);
+            }
+        };
+        c3.onended = function(){
+            videoNumber = videoNumber +1;
+            c3.style.display='none';
+            if(videoNumber == 6){
+                endControl(score);
+            }else{
+                videoControl(videoNumber);
+            }
+        };
+        c4.onended = function(){
+            videoNumber = videoNumber +1;
+            c4.style.display='none';
+            if(videoNumber == 6){
+                endControl(score);
+            }else{
+                videoControl(videoNumber);
+            }
+        };
+        c5.onended = function(){
+            videoNumber = videoNumber +1;
+            c5.style.display='none';
+            if(videoNumber == 6){
+                endControl(score);
+            }else{
+                videoControl(videoNumber);
+            }
+        };
+    
+        wrong.onended = function(){
+            wrong.style.display = 'none';
+            videoControl(videoNumber);
+            if(videoNumber == 6){
+                endControl(score);
+            }
+        };
+        
+        
+    function scoreControl(s) {   
+        switch (s){
+            case 1:
+            c1.style.display='block';
+            c1.play();
+            break;
+                
+            case 2:
+            c2.style.display='block';
+            c2.play();
+            break;
+                
+            case 3:
+            c3.style.display='block';
+            c3.play();
+            break;
+                
+            case 4:
+            c4.style.display='block';
+            c4.play();
+            break;
+                
+            case 5:
+            c5.style.display='block';
+            c5.play();
+            break;
+        }
+};
+        function videoControl(v) {   
+        switch (v){
+            case 1:
+            q1.style.display='block';
+            q1.play();
+            q1yes.style.display='block';
+            q1no.style.display='block';
+            break;
+                
+            case 2:
+            q2.style.display='block';
+            q2.play();
+            q2yes.style.display='block';
+            q2no.style.display='block';
+            break;
+                
+            case 3:
+            q3.style.display='block';
+            q3.play();
+            q3yes.style.display='block';
+            q3no.style.display='block';
+            break;
+                
+            case 4:
+            q4.style.display='block';
+            q4.play();
+            q4yes.style.display='block';
+            q4no.style.display='block';
+            break;
+                
+            case 5:
+            q5.style.display='block';
+            q5.play();
+            q5yes.style.display='block';
+            q5no.style.display='block';
+            break;
+        }
+};
+        
+        function wrongControl(){
+            wrong.style.display='block';
+            wrong.play();
+            videoNumber = videoNumber + 1;
+            if(videoNumber == 6){
+                endControl(score)
+            }
+        };
+        
+        function endControl(s){
+            switch(s){
+                    case 0:
+                    e1.style.display='block';
+                    e1.play();
+                    break;
+                    case 1:
+                    e1.style.display='block';
+                    e1.play();
+                    break;
+                    case 2:
+                    e1.style.display='block';
+                    e1.play();
+                    break;
+                    case 3:
+                    e1.style.display='block';
+                    e1.play();
+                    break;
+                    case 4:
+                    e2.style.display='block';
+                    e2.play();
+                    break;
+                    case 5:
+                    e3.style.display='block';
+                    e3.play();
+                    break;
+                    
+            }
+        };
+        
+        
+
+        
+        
+    </script>
+</html>
