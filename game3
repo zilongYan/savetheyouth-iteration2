@@ -1,0 +1,433 @@
+<html>
+     <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+<body>
+    <div id="video_container" class="container">
+        <video id="ReadyToPlay" autoplay loop>
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-start.mp4" type=video/mp4 >
+        </video>
+        <div id="playButton">
+          <button id="play"></button>
+        </div> 
+        <video id="SelectChar"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-selectChar.mp4" type=video/mp4>
+        </video>
+        <video id="Loading"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-loading.mp4" type=video/mp4>
+        </video>
+        <video id="1"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-1.mp4" type=video/mp4>
+        </video>
+        <video id="2"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-2.mp4" type=video/mp4>
+        </video>
+        <video id="3"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-3.mp4" type=video/mp4>
+        </video>
+        <video id="q1"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-q1.mp4" type=video/mp4>
+        </video>
+        <video id="q1select"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/q1select.mp4" type=video/mp4>
+        </video>
+        <video id="q1a1"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-q1-a.mp4" type=video/mp4>
+        </video>
+        <video id="q1a2"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-shopping.mp4" type=video/mp4>
+        </video>
+        <video id="choosetoy"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-choose-toy.mp4" type=video/mp4>
+        </video>
+        
+        <video id="selectbear"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-select-bear.mp4" type=video/mp4>
+        </video>
+        
+        <video id="aftershopping"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-after-shopping.mp4" type=video/mp4>
+        </video>
+        
+        <video id="backtohome"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-back-to-home.mp4" type=video/mp4>
+        </video>
+        
+        <video id="toyreselect"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-toy-reselect.mp4" type=video/mp4>
+        </video>
+        
+        <video id="robtoy"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-rob-toy.mp4" type=video/mp4>
+        </video>
+        
+         <video id="exchangetoy"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-exchange-toy.mp4" type=video/mp4>
+        </video>
+        
+         <video id="losegame"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-lose.mp4" type=video/mp4>
+        </video>
+        <video id="losegamereselect"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-lose-game-reselect.mp4" type=video/mp4>
+        </video>
+        
+        
+         <video id="throwdesk"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-throw-desk.mp4" type=video/mp4>
+        </video>
+        
+        <video id="continueplay"  style="display: none">
+            <source id="mp4video" src="http://www.savetheyouth-iteration2.tk/wp-content/uploads/2019/09/game3-continue-play.mp4" type=video/mp4>
+        </video>
+        
+        <div id="choosetoyButton" style="display: none">
+            <button id="bear"></button>
+<!--            <button id="dragon"></button>-->
+        </div>
+        
+        <div id="toyselect" style="display: none">
+            <button id="rob"></button>
+            <button id="exchange"></button>
+        </div>
+        
+        
+        <div id="q1button" style="display: none">
+            <button id="q1abandon"></button>
+            <button id="q1respect"></button>
+        </div>
+        <div id="q1reselectButton" style="display: none" >
+            <button id="q1res"></button>
+        </div>
+        
+        
+        <div id="toyreselection" style="display: none">
+            <button id="reselecttoy"></button>
+        </div>
+        
+        <div id = "losegameselection" style="display: none">
+            <button id="throw"></button>
+            <button id="continue"></button>
+        </div>
+        
+        <div id="losegamereselection" style="display: none">
+            <button id="reselectlosegame"></button>
+        </div>
+        
+        
+    </div>
+</body>
+    <style>
+         #play{
+            position: absolute;
+            right:3%;
+            bottom: 4%;
+            width:210px;
+            height: 80px;
+            background-color: transparent;
+        }
+        #q1abandon{
+            position: absolute;
+            right:3%;
+            bottom: 35%;
+            width:400px;
+            height: 80px;
+            background-color: transparent;
+        }
+        
+        #q1respect{
+            position: absolute;
+            right:3%;
+            bottom: 20%;
+            width:400px;
+            height: 80px;
+            background-color: transparent;
+        }
+        #q1res{
+            position: absolute;
+            right:17%;
+            bottom: 1%;
+            width:210px;
+            height:210px;
+            background-color: transparent;
+        }
+        
+        #bear{
+            position: absolute;
+            left:17%;
+            bottom: 1%;
+            width:210px;
+            height:210px;
+            background-color: transparent;
+        }
+        
+/*
+        #dragon{
+            position: absolute;
+            right:17%;
+            bottom: 1%;
+            width:210px;
+            height:210px;
+            background-color: transparent;
+        }
+*/
+        
+        #rob{
+            position: absolute;
+            right:20%;
+            bottom: 27%;
+            width:400px;
+            height: 80px;
+            background-color: transparent;
+        }
+        
+        #exchange{
+            position: absolute;
+            right:20%;
+            bottom: 12%;
+            width:400px;
+            height: 80px;
+            background-color: transparent;
+        }
+        
+        #reselecttoy{
+            position: absolute;
+            right:20%;
+            bottom: 1%;
+            width:210px;
+            height:210px;
+            background-color: transparent;
+        }
+    
+        #reselectlosegame{
+            position: absolute;
+            right:20%;
+            bottom: 1%;
+            width:210px;
+            height:210px;
+            background-color: transparent;
+        }
+        
+        #throw{
+            position: absolute;
+            right:22%;
+            bottom: 26%;
+            width:400px;
+            height: 80px;
+            background-color: transparent;
+        }
+        
+        #continue{
+            position: absolute;
+            right:22%;
+            bottom: 11%;
+            width:400px;
+            height: 80px;
+            background-color: transparent;
+        }
+    
+        
+        
+    </style>
+    <script type="text/javascript">
+         var ReadyToPlay = document.getElementById('ReadyToPlay');
+         var SelectChar = document.getElementById('SelectChar');
+         var Loading = document.getElementById('Loading');
+         var playGame = document.getElementById('play');
+         var v1 = document.getElementById('1');
+         var v2 = document.getElementById('2');
+         var v3 = document.getElementById('3');
+         var q1 = document.getElementById('q1');
+         var q1button = document.getElementById('q1button');
+         var q1abandon = document.getElementById('q1abandon');
+         var q1respect = document.getElementById('q1respect');
+         var q1a1 = document.getElementById('q1a1');
+         var q1a2 = document.getElementById('q1a2');
+         var q1res = document.getElementById('q1res');
+         var q1reselectButton = document.getElementById('q1reselectButton');
+         var q1select = document.getElementById('q1select');
+         var choosetoy = document.getElementById('choosetoy');
+         var bear = document.getElementById('bear');
+         var dragon = document.getElementById('dragon');
+         var choosetoyButton = document.getElementById('choosetoyButton');
+         var selectbear = document.getElementById('selectbear');
+         var aftershopping = document.getElementById('aftershopping');
+         var backtohome = document.getElementById('backtohome');
+         var toyselect = document.getElementById('toyselect');
+         var rob = document.getElementById('rob');
+         var exchange = document.getElementById('exchange');
+         var robtoy = document.getElementById('robtoy');
+         var toyreselect = document.getElementById('toyreselect');
+         var toyreselection = document.getElementById('toyreselection');
+         var exchangetoy = document.getElementById('exchangetoy');
+         var losegame = document.getElementById('losegame');
+         var throwdesk = document.getElementById('throwdesk');
+         var losegamereselection = document.getElementById('losegamereselection');
+         var reselectlosegame = document.getElementById('reselectlosegame');
+         
+         
+    
+        playGame.addEventListener("click", function(event) {
+        ReadyToPlay.style.display = 'none' ;
+        Loading.style.display = 'block' ;
+            Loading.play();
+            playGame.style.display= 'none'
+}, false);
+        
+        Loading.onended = function(){
+            Loading.style.display = 'none';
+            v1.style.display = 'block';
+            v1.play();
+        }
+        v1.onended = function(){
+            v1.style.display = 'none';
+            v2.style.display = 'block';
+            v2.play();
+        }
+        v2.onended = function(){
+            v2.style.display = 'none';
+            v3.style.display = 'block';
+            v3.play();
+        }
+        v3.onended = function(){
+            v3.style.display = 'none';
+            q1button.style.display = 'block';
+            q1.style.display = 'block';
+            q1.play();
+        }
+        
+       q1abandon.addEventListener("click", function(event) {
+        q1select.pause();
+        q1select.style.display = 'none';
+        q1button.style.display = 'none';
+        q1.style.display = 'none';
+        q1a1.style.display = 'block';
+        q1a1.play();
+}, false);
+        
+        q1a1.onended = function(){
+            q1a1.style.display = 'none';
+            q1select.style.display = 'block';
+            q1select.play();
+            q1button.style.display = 'block';
+        }
+        
+        q1res.addEventListener("click", function(event) {
+            q1a1.style.display = 'none';
+            q1reselectButton.style.display = 'none';
+            q1select.style.display = 'block';
+            q1select.play();
+            q1button.style.display = 'block';
+        }, false);
+        
+        q1respect.addEventListener("click",function(event){
+            q1select.pause();
+            q1select.style.display = 'none';
+            q1button.style.display = 'none';
+            q1.style.display = 'none';
+            q1a2.style.display = 'block';
+            q1a2.play();
+        },false)
+        
+        q1a2.onended = function(){
+            q1a2.style.display = 'none';
+            choosetoy.style.display = 'block';
+            choosetoy.play();
+            choosetoyButton.style.display = 'block';
+        }
+        
+        bear.addEventListener("click",function(event){
+            choosetoy.pause();
+            choosetoy.style.display = 'none'
+            choosetoyButton.style.display = 'none';
+            selectbear.style.display = 'block';
+            selectbear.play(); 
+        },false)
+        
+        selectbear.onended = function(){
+            selectbear.pause();
+            selectbear.style.display = 'none';
+            aftershopping.style.display = 'block';
+            aftershopping.play();
+        }
+        
+        aftershopping.onended = function(){
+            aftershopping.pause();
+            aftershopping.style.display = 'none';
+            backtohome.style.display = 'block';
+            backtohome.play();
+            toyselect.style.display = 'none';
+        }
+        
+        backtohome.onended = function(){
+            toyselect.style.display = 'block';
+        }
+        
+        rob.addEventListener("click",function(event){
+            toyreselect.style.display = 'none';
+            toyselect.style.display = 'none';
+            reselecttoy.style.display = 'none';
+            backtohome.style.display = 'none';
+            robtoy.style.display = 'block';
+            robtoy.play();
+        },false)
+        
+        robtoy.onended = function(){
+            robtoy.style.display = 'none';
+            toyreselect.style.display = 'block';
+            toyreselect.play();
+            toyselect.style.display = 'block';
+        }
+        
+        reselecttoy.addEventListener('click',function(evet){
+            toyreselection.style.display = 'none';
+            toyselect.style.display = 'block';
+            robtoy.style.display = 'none';
+            toyreselect.style.display = 'block';
+            toyreselect.play();
+        },false)
+        
+        
+        exchange.addEventListener("click",function(event){
+            toyreselect.style.display = 'none';
+            toyselect.style.display = 'none';
+            backtohome.style.display = 'none';
+            exchangetoy.style.display = 'block';
+            exchangetoy.play();
+        },false)
+        
+        exchangetoy.onended = function(){
+            exchangetoy.style.display = 'none';
+            losegame.style.display = 'block';
+            losegame.play();
+        }
+        losegame.onended = function(){
+            document.getElementById('losegameselection').style.display = 'block';
+        }
+        
+        document.getElementById('throw').addEventListener("click",function(event){
+            document.getElementById('losegamereselect').style.display = 'none';
+            document.getElementById('losegameselection').style.display = 'none';
+            losegame.style.display = 'none';
+            document.getElementById('throwdesk').style.display = 'block';
+            document.getElementById('throwdesk').play();
+        },false)
+        document.getElementById('throwdesk').onended = function(){
+            document.getElementById('throwdesk').style.display = 'none';
+            document.getElementById('losegamereselect').style.display = 'block';
+             document.getElementById('losegameselection').style.display = 'block';
+        }
+        
+        document.getElementById('continue').addEventListener("click",function(event){
+            document.getElementById('losegameselection').style.display = 'none';
+            document.getElementById('losegamereselect').style.display = 'none';
+             losegame.style.display = 'none';
+            document.getElementById('continueplay').style.display = 'block';
+             document.getElementById('continueplay').play();
+            
+        },false)
+    
+        
+    </script>
+</html>
